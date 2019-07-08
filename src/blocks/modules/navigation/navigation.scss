@@ -4,10 +4,10 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    padding-top: rem(18);
     @media #{$desktop} {
         flex-direction: row;
-        margin-bottom: rem(140);
+        margin-bottom: rem(55);
     }
 }
 
@@ -58,4 +58,13 @@
     font-size: 1rem;
     font-weight: 700;
     padding: rem(23) rem(35);
+    cursor: pointer;
+    &:hover {
+        background-color: #5489c3;
+        padding: rem(23) rem(103) rem(23) rem(47);
+        border: 2px solid transparent;
+    }
+    &:hover span {
+        display: none;
+    }
 }
