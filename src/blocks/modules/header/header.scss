@@ -1,27 +1,34 @@
 .header {
-    background: url('../../../img/bg.webp') center no-repeat;
-    height: rem(681);
+    background: url('../img/bg.webp') center no-repeat;
+    height: rem(781);
     background-size: cover;
     margin-bottom: rem(140);
     @media #{$desktop} {
         height: rem(751);
     }
+    &--bg2 {
+        background: url('../img/bg2.webp') center no-repeat;
+    }
 }
 
 .no-webp .header {
-    background: url('../../../img/bg.png') center no-repeat;
+    background: url('../img/bg.png') center no-repeat;
 }
 
 .header__title {
-    width: rem(742);
+    width: rem(222);
     margin: 0 auto;
     text-align: center;
     color: #ffffff;
-    font-size: rem(26);
+    font-size: rem(20);
     font-weight: 500;
     line-height: rem(34);
-
+    margin-bottom: rem(20);
+    &--screen-2 {
+        text-align: left;
+    }
     @media #{$desktop} {
+        width: rem(742);
         font-size: rem(36);
         line-height: rem(54);
         margin-bottom: rem(41);
@@ -29,15 +36,26 @@
 }
 
 .header__subtitle {
-    width: rem(657);
+    width: rem(286);
     margin: 0 auto;
     text-align: center;
     color: #ffffff;
     font-size: 1rem;
     font-weight: 500;
     line-height: rem(26);
+    margin-bottom: rem(48);
+    &--screen-2 {
+        width: rem(320);
+        @media #{$desktop} {
+            width: rem(880);
+            font-size: rem(24);
+            line-height: rem(36);
+            margin-bottom: rem(40);
+        }
+    }
 
     @media #{$desktop} {
+        width: rem(657);
         font-size: rem(24);
         line-height: rem(36);
         margin-bottom: rem(40);
@@ -63,19 +81,24 @@
     }
 }
 
-.pagination button {
+.slick-dots {
     display: flex;
-    background: none;
-    &::before {
-        content: '';
-        width: 20px;
-        height: 10px;
-        background: #000;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 16px;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #5489c3;
+    li {
+        width: 16px;
+        height: 1px;
+        background-color: #5489c3;
     }
-    &::after {
-        content: '';
-        width: 20px;
-        height: 10px;
-        background: #000;
+    .slick-active {
+        background-color: #fff;
     }
 }
