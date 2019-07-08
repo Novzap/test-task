@@ -1,0 +1,17 @@
+@mixin font-face($name, $url-regular, $url-bold) {
+    @font-face {
+        font-family: $name;
+        src: url('../../fonts/' + $url-regular + '.woff2') format('woff2'),
+             url('../../fonts/' + $url-regular + '.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: $name;
+        src: url('../../fonts/' + $url-bold + '.woff2') format('woff2'),
+             url('../../fonts/' + $url-bold + 'woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+  }

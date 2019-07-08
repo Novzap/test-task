@@ -1,0 +1,54 @@
+.header {
+    background: url('../../../img/bg.webp') center no-repeat;
+    height: rem(681);
+    background-size: cover;
+
+    @media #{$desktop} {
+        height: rem(751);
+    }
+}
+
+.no-webp .header {
+    background: url('../../../img/bg.png') center no-repeat;
+}
+
+.header__title {
+    text-align: center;
+    color: #ffffff;
+    font-size: rem(26);
+    font-weight: 500;
+    line-height: rem(34);
+
+    @media #{$desktop} {
+        font-size: rem(36);
+        line-height: rem(54);
+        margin-bottom: rem(51);
+    }
+}
+
+.header__subtitle {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: rem(36);
+
+    @media #{$desktop} {
+        font-size: rem(24);
+        line-height: rem(26);
+        margin-bottom: rem(52);
+    }
+}
+
+.header__btn {
+    display: block;
+    border: none;
+    margin: 0 auto 35px auto;
+    padding: 24px 30px;
+    border-radius: 30px;
+    background-color: #e70067;
+    color: #f0f5ff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: rem(24);
+}
